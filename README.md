@@ -1,5 +1,5 @@
 # Compiling tips
-<p class="_1qeIAgB0cPwnLhDF9XSiJM">So I've had my Steam Deck for a while now. There's a lot of guides floating around, but I decided to create just one guide containing all the information that I wish I knew before booting up my Deck for the first time. It ended up being a lot, but I've broken it down by category to hopefully make it a bit more usable and digestible.</p>
+<p class="_1qeIAgB0cPwnLhDF9XSiJM">So I've had my Steam Deck for a while now. There's a lot of guides floating around, but I decided to create just one guide containing all the information that I wish I knew before booting up my Deck for the first time. It ended up being a lot, but I've broken it down by category to hopefully make it a bit more usable and digestible.</p><div class="_7T4UafM1PdBGycd5na9nF">Desktop Mode</div><div class="_1WODZhR-x-fbMu3MOL9cH1">- Running Installers</div>
 # Games and Software
 
 [Back to Home](/README.md#table-of-contents)
