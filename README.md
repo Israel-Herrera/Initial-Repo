@@ -454,3 +454,160 @@ Cartridge Features
 </p>
 
 [Anbox](https://github.com/anbox) is a container-based software for running a full Android system on Linux distributions. Make sure to checkout the [Anbox Arch wiki page](https://wiki.archlinux.org/title/Anbox).
+
+
+
+
+
+
+
+
+
+
+
+
+#Desktop Mode
+## Running Installers
+Fellow Linux noobs like myself may get stumped by a certain problem when attempting to run installers from within desktop mode. If you try to run an installer and get a message that there's no software to run it, then then may confuse you since installers don't typically require special software to run. If you encounter this while trying to install any of the software from this guide, then all you need to do to resolve it is go to the file's properties and check off "is executable" from the permissions tab.
+
+## On-Screen Keyboard
+Don't bother trying to use the on-screen keyboard as a touchscreen keyboard from within desktop mode. Works great for SteamOS, but for whatever reason the keyboard isn't very responsive to touch from within desktop mode. I find the keyboard is best used by typing with the touch pads in this case. It takes some getting used to, but it works great once you are accustomed to it.
+
+Sept 21st edit: Valve has fixed this issue in the latest update for the beta branch. https://store.steampowered.com/news/app/1675200/view/5464578025606471947 Likely will be in the next stable release as well.
+
+## Closing The Steam Client
+Some things you want to do in desktop mode will also require you to close Steam. Note that closing Steam for whatever reason will change the control scheme when you're using it in handheld mode. You wont be able to do anything with the built-in controls for a few seconds after Steam closes, but just wait it out. You'll find that the track-pads can still be used for moving the mouse, but clcking them no longer does anything. For whatever reason, you'll have to switch to using the triggers for right and left mouse clicks until you run the Steam client again.
+
+More importantly, the Steam button doesn't do anything when the Steam client is closed, which means that you cannot use it to open the on-screen keyboard when it's closed. Keep this in mind when you're doing something that requires you to close it, such as running the Steam Rom Manager that is covered in the emulation section.
+
+#SteamOS (gaming mode)
+## Managing Storage
+A great deal of you are no doubt using or planning on using an SD card for your Steam deck. If you're like me, then you will be wanting to put specific games on internal storage or SD for various reasons. You should therefore know that SteamOS does not ask you where to want to download games to when you install them from the library. It will automatically use whatever you set the default storage location to in settings. If you don't want to switch the default storage location for a specific installation, then all you need to do visit the store page and install from there. This is the only way I'm aware of in order to pick which storage you want to you use on a per-game basis.
+
+## Decky Plugin Loader
+https://github.com/SteamDeckHomebrew/decky-loader. Decky is an addon to SteamOS that can be used to install and manage plugins from right inside of SteamOS.
+
+There are various useful plugins that you can find in the built-in plugin store, but I think the one with the most widespread appeal is ProtonDB Badges. This plugin connects to the ProtonDB https://www.protondb.com/ website and will display their compatibility rating in the top left corner when viewing the games in your library. You can click on the badge in order to go right to the ProtonDB page and get more info about the compatibility score. Other Steam Deck users who have uploaded their experience to the website will be clearly indicated with a Steam Deck logo. This is very useful when determining if an unverified game is going to play well on your deck or not. Sometimes there's tinkering steps provided that may be necessary to get the game running or increase performance as well.
+
+#Playing Games From Other Stores
+So lots of you are going to have games from other store fronts that you will want to try on Steam Deck. This is pretty easy to do, but it'll require that you install the third party launchers and/or games from desktop mode and add them to your Steam library in order to access them from within SteamOS, aka "Gaming Mode".
+
+## BoilR
+https://github.com/PhilipK/BoilR BoilR is a tool that can be used to automatically add non-Steam games to your Steam library, and can be set up to automatically download and apply artwork from SteamGridDB https://www.steamgriddb.com/ as well. You can also configure the games to launch through third-party launchers when this is required of them. The following sections will cover how to isntall non-Steam games from various sources and BoilR should be kept in mind as a convenient way to add them all to your Steam library once they're installed.
+
+## Lutris
+Used for installing and playing games from: GOG, Epic Games Store, Origin or Ubisoft Connect
+
+If you're looking to install any of the above lauchers / store fronts onto your Steam Deck then Lutris https://lutris.net/ is a popular option. It's available via the Discover app in desktop mode and it helps you install and play video games from these store fronts by using existing emulators, engine re-implementations and compatibility layers.
+
+Lutris also serves as a central point to launch the games from after you've installed them and can be added to your Steam library to launch from within SteamOS. However, you may decide you want to add the games themselves your library instead, and that can easily be achieved with the aforementioned BoilR.
+
+## Heroic Games Launcher
+Thank you to u/Javasteam for reminding me about this one.
+
+https://heroicgameslauncher.com/ Heroic Games Launcher is another popular option for playing games from GOG and Epic Games Store. It actually provides an entirely separate launcher, but you can still access the Epic or GOG store and make purchases from within.
+
+## itch.io
+itcho.io has a desktop app https://itch.io/app that is available for Linux. It is a convenient way to access and install games from your itch.io library, but as of the writing of this guide, it doesn't seem possible to launch the app from within SteamOS. Attempting to do so with result in it loading for a while before closing without any sort of error message.
+
+With that being said, I've played Turnip Boy Commits Tax Evasion, as well as Unciv from within Desktop mode and they both played great. I didn't have to configure the controls for Turnip Boy and the touch pads work great for playing a point-and-click game like Unciv.
+
+Neither of the games showed up in the list when I tried to add them to my library using the Steam client, but I was able to add them using BloilR. However, I was not successful trying to launch Turnip Boy from within SteamOS and had similar experience to trying to run the itch launcher. However, I was able to launch Unciv no problem.
+
+Again, Turnip boy launched and played great in desktop mode, so I have no idea what the problem is.
+
+u/Cool-Arrival-2617 informed me a while back of a itch flatpak https://github.com/gjpin/itch-flatpak that would probably work via SteamOS and might fix my issue with launching Turnip Boy, but I haven't got around to trying it yet.
+
+Edit: This comment https://www.reddit.com/r/SteamDeck/comments/xitb9p/my_ultimate_steam_deck_guide_after_being_able_to/ip4z547/?context=3 mentions that installing the Windows version of the itch.io app and adding it to your library through Bottles https://usebottles.com/ seems to work better.
+
+## Xbox Cloud Gaming
+https://support.microsoft.com/en-us/topic/xbox-cloud-gaming-in-microsoft-edge-with-steam-deck-43dd011b-0ce8-4810-8302-965be6d53296 Microsoft's official documentation on Xbox Cloud Gaming in Microsoft Edge with Steam Deck. I don't play xbox and so haven't tried this myself, but there you go.
+
+#Emulation
+Most emulators have native Linux versions and you can simply download, configure and install them individually. However, here are two major options for streamlining your emulation experience on Steam Deck: EmuDeck https://www.emudeck.com/ and RetroDECK. https://retrodeck.net/
+
+EmuDeck has been around longer and seem to be the more widely used option, at least in this subreddit. I hadn't heard of RetroDECK when I first started with emulation on my Steam Deck either, so EmuDeck is the one that I have the most experience with. That said, I've had a pleasant experience using both of them and I'll do my best to cover both of them.
+
+## EmuDeck
+https://www.emudeck.com/ EmuDeck is downloaded off the website. When you run the installer, it initiates a script that will automatically install and configure a bunch of emulators to your Steam Deck. During the installation it will also ask you where you want to save your ROMs and BIOS files to and will create a folder structure there accordingly. Once that's done, you will have to go into the file system and place your ROMs and BIOS into the appropriate folders that it created in order to install them.
+
+After installing ROMs you will have to close the Steam client and run the SteamRomManager.desktop script in order to add the games into your Steam library. Just like BoilR, this program will also use SteamGridDB https://www.steamgriddb.com/ to automatically download and apply artwork to your games.
+
+You do not have to add the ROMs to your Steam library just because you're using EmuDeck though. It seamlessly integrates with EmulationStation https://github.com/Aloshi/EmulationStation
+
+EmuDeck is catching increasing amounts of criticism from the community for not being available as a Flatpack, for having a "messy" install that places files and folders into different locations, and not being able to be fully uninstalled via it's own uninstall script.
+
+Lastly, this post https://www.reddit.com/r/SteamDeck/comments/xfdswn/really_important_setup_instructions_most_emudeck/ also talks about how it may be necessary to reconfigure EmuDeck in order to get decent performance with some emulators. It might be fixed with an update, but for now, be sure to switch off of the RetroArch cores for improvement with N64, PS2, Gamecube and Wii emulation.
+
+## RetroDECK
+RetroDECK wins in ease of installation and updating simply because it is a Flatpack available via the Discovery app. Just like EmuDeck, it will install and configure emulators for your Steam Deck.
+
+Unlike EmuDeck, RetroDECK does NOT add the Steam games to your library and instead functions as a standalone launcher for your ROMs. You can add it to your library as a non-Steam app for use within SteamOS, but there's no option to add the games to your library and BoilR doesn't seem to work with ROMs either. This isn't strictly a bad thing though, and some people may actually prefer a separate launcher for their ROMs, especially if they have a lot of them. Lastly, it can also use Steam Grid to add artwork to your ROMs after installation.
+
+## General Emulation Advice
+###FPS limiting
+
+Limiting to 40 refresh rate and 40 fps is common bit of tinkering a lot of people do to squeeze some more battery life out of their deck. This comment https://www.reddit.com/r/SteamDeck/comments/xitb9p/my_ultimate_steam_deck_guide_after_being_able_to/ip6hc5c/?context=3 goes into detail about why this isn't a good idea for many emulators. If you have 40 fps as the default for all games on your Steam Deck then I recommend switching to only using that as a per-game setting and going with 30 or 60 fps on any emulated games.
+
+###Disabling Simultaneous Multithreading (SMT)
+
+Thank you u/Intoxicus5 from this comment chain https://www.reddit.com/r/SteamDeck/comments/xitb9p/my_ultimate_steam_deck_guide_after_being_able_to/ip7qzcc/?context=3 who educated me on this topic. What is suggested is disabling SMT when emulating any device that wasn't designed to handle modern multicore CPUs (which is definitely any system as old as the Wii or older). This can be done by installing the PowerTools extension for the Decky plugin loader that's covered in the SteamOS section.
+
+###Switching to the OpenGL API
+
+So Vulkan is better most of the time for your graphics API, but if you're noticing poor performance still after disabling SMT in an emulator for older hardware, then it might be worth it to try switching to OpenGL in your emulator's settings. u/Intoxicus5 also reports that this has increased his performance for the Dolphin emulator in particular.
+
+#Compatibility Tools
+## ProtonUp-Qt
+ProtonUp-Qt is an excellent tool for installing and managing third-party compatibility tools for your Steam games, also available via the Discover app. I won't go into detail talking about it here, but rather I'll just link to this https://www.youtube.com/watch?v=wilUcrHNaCE informative YouTube video where I found out about it.
+
+TL;DR: it is a single interface for downloading various compatibility tools and you can also assign said compatibility tools to specific games from right inside it's GUI. Very convenient if you want to mess round with these.
+
+It can be used to install and manage all of the following compatibility tools:
+
+GE-Proton (GE stands for Glorious Eggroll) https://github.com/GloriousEggroll/proton-ge-custom
+
+Boxtron https://github.com/dreamer/boxtron
+
+Luxtorpeda https://github.com/dreamer/luxtorpeda
+
+Proton Tkg https://github.com/Tk-Glitch/wine-proton-tkg
+
+Roberta https://github.com/dreamer/roberta
+
+## Bottles
+https://usebottles.com/ Bottles is yet another compatibility tool available via the Discovery app and is for running Windows software in Linux. It's kinda like Proton, but for desktop applications. It has both a gaming and general software environment. With the gaming one you can run the Windows version of the itch app and the other game stores that I otherwise suggested using Lutris for in the Non-Steam Gaming section. Why would you do this? Well at least in the case of the itch app, it seems that running the Windows version of it through bottles just makes it work better and lets you run more games. It's not strictly for gaming though, and the general software environment is designed for other use cases. More advanced configuration of bottles is also available to power users.
+
+#File Transfer
+There are so many different options available and I'm sure someone's gonna leave a comment talking about SSH and whatnot, but the solution I've gone with and that has worked great for me is Warpinator https://github.com/linuxmint/warpinator#warpinator---send-and-receive-files-across-a-local-network. It's available via the Discovery app for installing to your Steam Deck and is super easy to use. The developer only made it for Linux, but it's free and open source and that page contains links for other projects that make it work on Windows, Android and iOS as well. Once you've installed it, the only setup required is going into the settings and determining where you want the files to save to.
+
+https://www.youtube.com/watch?v=x4_Sexd1UAw This video covers how to share folders with other devices on your local network without using any third party software and is also an option. It also covers setting up a network-attached storage system https://www.ibm.com/topics/network-attached-storage if that's something you're interested in.
+
+#Game Streaming (local network)
+Several users have proposed game streaming services as an alternative to file transfer. These are great services that I'm sure many people will find useful, so I've included some of them here, but I do not consider this as an alternative to file transfer. This is because these services are simply intended the extend your game library from something like a desktop computer to other devices in your house. There's plenty of use for it, including with your Steam Deck, but a streaming service is not going to help if you're traveling with your Steam Deck or if you want to transfer files en mass onto it, such as a collection of ROMs.
+
+## Steam Link
+https://store.steampowered.com/app/353380/Steam_Link/ Steam Link is a service that's built right into the Steam client and therefore won't require any additional downloads or setup for use on your Steam Deck.
+
+## Moonlight & Sunshine
+https://moonlight-stream.org/ Moonlight is an opensource NVIDIA game streaming client and Sunshine https://github.com/LizardByte/Sunshine adds compatibility for AMD and Intel GPUs. Several users have attested to superior performance than Steam Link, so if you're not satisfied with the image qualify, FPS or input lag when using Steam Link, then Moonshine / Sunshine may the superior choice.
+
+#Buying an SD Card
+Research the best SD card for the Steam Deck before buying one! Don't buy cheap brands either. Be cautious of brands you've never heard of before, and the deal seems too good to be true, it probably is! https://www.makeuseof.com/tag/how-to-spot-fake-microsd-card/
+
+This video https://www.youtube.com/watch?v=JGHZs8RTlVU talks about what stats to look for when purchasing a micro SD card. They recommend an SDXC U3 A2 micro SD card for best performance.
+
+This video https://www.youtube.com/watch?v=eNX4SFMftEY compares the performance of the 256GB model SD card for all the major brands with the same specifications as the previous video. Samsung ended up being the best for 512GB and below, whereas Sandisk is the best for 1TB.
+
+Edit: Thanks to this commenter https://www.reddit.com/r/SteamDeck/comments/xitb9p/my_ultimate_steam_deck_guide_after_being_able_to/ip6hri4/?context=3 directing me to an infographic that provides much of the same info as the first video. Definitely more useful as just a quick reference point.
+
+
+
+
+
+
+
+
+
+
+
