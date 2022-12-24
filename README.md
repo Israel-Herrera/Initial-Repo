@@ -1,3 +1,4 @@
+https://retrogamecorps.com/2022/10/16/steam-deck-emulation-starter-guide/
 # Compiling tips
 # Games and Software
 
